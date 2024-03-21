@@ -48,7 +48,7 @@ To use LangChain, follow these steps:
    
    This will return a JSON response containing the answer to the query and the source documents used for answering.
 
-4. OR You can use Postman to send simple post request as below JQuery example
+4. Or You can use Postman to send simple POST request as below JQuery example
    
    ```bash
    var form = new FormData();
