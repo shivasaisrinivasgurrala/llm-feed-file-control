@@ -1,0 +1,9 @@
+License
+Main article: Software license
+The software's license gives the user the right to use the software in the licensed environment, and in the case of free software licenses, also grants other rights such as the right to make copies.[28]
+
+Proprietary software can be divided into two types:
+
+freeware, which includes the category of "free trial" software or "freemium" software (in the past, the term shareware was often used for free trial/freemium software). As the name suggests, freeware can be used for free, although in the case of free trials or freemium software, this is sometimes only true for a limited period of time or with limited functionality.[29]
+software available for a fee, which can only be legally used on purchase of a license.[30]
+Open-source software comes with a free software license, granting the recipient the rights to modify and redistribute the software.[31]

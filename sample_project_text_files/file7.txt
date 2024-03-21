@@ -1,0 +1,5 @@
+Execution
+Main article: Execution (computing)
+Computer software has to be "loaded" into the computer's storage (such as the hard drive or memory). Once the software has loaded, the computer is able to execute the software. This involves passing instructions from the application software, through the system software, to the hardware which ultimately receives the instruction as machine code. Each instruction causes the computer to carry out an operation—moving data, carrying out a computation, or altering the control flow of instructions.[citation needed]
+
+Data movement is typically from one place in memory to another. Sometimes it involves moving data between memory and registers which enable high-speed data access in the CPU. Moving data, especially large amounts of it, can be costly; this is sometimes avoided by using "pointers" to data instead.[citation needed] Computations include simple operations such as incrementing the value of a variable data element. More complex computations may involve many operations and data elements together.[citation needed]

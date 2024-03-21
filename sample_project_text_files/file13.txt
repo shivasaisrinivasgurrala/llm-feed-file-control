@@ -1,0 +1,20 @@
+Dataset preprocessing
+See also: List of datasets for machine-learning research § Internet
+Probabilistic tokenization
+Because machine learning algorithms process numbers rather than text, the text must be converted to numbers. In the first step, a vocabulary is decided upon, then integer indexes are arbitrarily but uniquely assigned to each vocabulary entry, and finally, an embedding is associated to the integer index. Algorithms include byte-pair encoding and WordPiece.
+
+Probabilistic tokenization also compresses the datasets. Because LLMs generally require input to be an array that is not jagged, the shorter texts must be "padded" until they match the length of the longest one. How many tokens are, on average, needed per word depends on the language of the dataset.[17][18]
+
+BPE
+Using a modification of byte-pair encoding, in the first step, all unique characters (including blanks and punctuation marks) are treated as an initial set of n-grams (i.e. initial set of uni-grams). Successively the most frequent pair of adjacent characters is merged into a bi-gram and all instances of the pair are replaced by it. All occurrences of adjacent pairs of (previously merged) n-grams that most frequently occur together are then again merged into even lengthier n-gram repeatedly until a vocabulary of prescribed size is obtained (in case of GPT-3, the size is 50257).[19] Token vocabulary consists of integers, spanning from zero up to the size of the token vocabulary. New words can always be interpreted as combinations of the tokens and the initial-set uni-grams.[20]
+
+A token vocabulary based on the frequencies extracted from mainly English corpora uses as few tokens as possible for an average English word. An average word in another language encoded by such an English-optimized tokenizer is however split into suboptimal amount of tokens. GPT-2 tokenizer can use up to 15 times more tokens per word for some languages, for example for Shan language from Myanmar. Even more widespread languages such as Portuguese and German have "a premium of 50%" compared to English.[21]
+
+For example, here is how tokenizer used by GPT-3 (Legacy) split the following sentence tokenizer: texts -> series of numerical "tokens".
+
+token	izer	:	 texts	 ->	series	 of	 numerical	 "	t	ok	ens	"
+Dataset cleaning
+Main article: Data cleansing
+In the context of training LLMs, datasets are typically cleaned by removing toxic passages from the dataset, discarding low-quality data, and de-duplication.[22] Cleaned datasets can increase training efficiency and lead to improved downstream performance.[23][24]
+
+With the increasing proportion of LLM-generated content on the web, data cleaning in the future may include filtering out such content. LLM-generated content can pose a problem if the content is similar to human text (making filtering difficult) but of lower quality (degrading performance of models trained on it).[25]
